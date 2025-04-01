@@ -16,10 +16,17 @@
             font-family: 'Arial', sans-serif; /* 글씨체 설정 */
             background-color: #f0f8ff; /* 배경색 변경 */
         }
+
+        /* 컨텐츠를 감싸는 div */
+        div {
+            text-align: center; /* 텍스트 중앙 정렬 */
+            padding: 20px;
+            width: 90%; /* 작은 화면에서 너무 넓어지지 않도록 설정 */
+            max-width: 800px; /* 큰 화면에서 최대 너비를 제한 */
+        }
         
         /* h1, h2 스타일 */
         h1, h2 {
-            text-align: center; /* 텍스트 중앙 정렬 */
             color: #333; /* 글씨 색상 */
             font-weight: bold; /* 글씨 두껍게 */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
@@ -33,6 +40,45 @@
         h2 {
             font-size: 2rem; /* h2 크기 조정 */
             color: #4682b4; /* h2 색상 */
+        }
+
+        /* 반응형 디자인: 화면 크기에 맞춰 스타일 적용 */
+
+        /* 작은 화면 (모바일) */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem; /* h1 크기 줄이기 */
+            }
+            h2 {
+                font-size: 1.8rem; /* h2 크기 줄이기 */
+            }
+            div {
+                width: 95%; /* 모바일에서는 95%로 넓이 조정 */
+                padding: 10px; /* 여백 줄이기 */
+            }
+        }
+
+        /* 중간 크기 화면 (태블릿) */
+        @media (min-width: 601px) and (max-width: 900px) {
+            h1 {
+                font-size: 2.8rem; /* h1 크기 조정 */
+            }
+            h2 {
+                font-size: 2.2rem; /* h2 크기 조정 */
+            }
+            div {
+                width: 90%; /* 태블릿에서는 90%로 너비 설정 */
+            }
+        }
+
+        /* 큰 화면 (데스크탑) */
+        @media (min-width: 901px) {
+            h1 {
+                font-size: 3rem; /* 데스크탑에서는 기본 크기 */
+            }
+            h2 {
+                font-size: 2.5rem; /* 데스크탑에서는 기본 크기 */
+            }
         }
     </style>
 </head>
