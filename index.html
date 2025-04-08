@@ -24,7 +24,7 @@
             width: 90%; /* 작은 화면에서 너무 넓어지지 않도록 설정 */
             max-width: 800px; /* 큰 화면에서 최대 너비를 제한 */
         }
-        
+
         /* h1, h2 스타일 */
         h1, h2 {
             color: #333; /* 글씨 색상 */
@@ -40,6 +40,22 @@
         h2 {
             font-size: 2rem; /* h2 크기 조정 */
             color: #4682b4; /* h2 색상 */
+        }
+
+        /* 버튼 스타일 */
+        button {
+            background-color: #4CAF50; /* 버튼 배경색 */
+            color: white; /* 버튼 글씨 색상 */
+            border: none;
+            padding: 15px 32px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049; /* 버튼 호버 색상 */
         }
 
         /* 반응형 디자인: 화면 크기에 맞춰 스타일 적용 */
@@ -86,6 +102,10 @@
     <div>
         <h1>지민이 바보 아니다</h1>
         <h2>사실 맞다</h2>
+        <!-- 링크가 연결된 버튼 -->
+        <a href="https://gall.dcinside.com/board/view/?id=dcbest&no=320488">
+            <button>지민이가 좋아하는 사이트로 가기</button>
+        </a>
     </div>
 </body>
 </html>
